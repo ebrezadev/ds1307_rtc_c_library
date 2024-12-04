@@ -65,9 +65,9 @@ void DS1307_snapshot_save();
 void DS1307_snapshot_clear();
 
 void DS1307_I2C_init();
-void time_i2c_write_single(uint8_t device_address, uint8_t register_address, uint8_t data_byte);
+void time_i2c_write_single(uint8_t device_address, uint8_t register_address, uint8_t *data_byte);
 void time_i2c_write_multi(uint8_t device_address, uint8_t start_register_address, uint8_t *data_array, uint8_t data_length);
-void time_i2c_read_single(uint8_t device_address, uint8_t register_address, uint8_t data_byte);
+void time_i2c_read_single(uint8_t device_address, uint8_t register_address, uint8_t *data_byte);
 void time_i2c_read_multi(uint8_t device_address, uint8_t start_register_address, uint8_t *data_array, uint8_t data_length);
 
 #endif
